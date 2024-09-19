@@ -3,10 +3,10 @@ LDFLAGS = -lm
 
 .PHONY: all clean
 
-all: exemplo_1_2
+all: exemplo_1_1
 
-exemplo_1_1: exemplo_1_2.c
-	gcc $(CFLAGS) exemplo_1_2.c -o exemplo_1_2 $(LDFLAGS)
+exemplo_1_1: exemplo_1_1.c
+	gcc $(CFLAGS) exemplo_1_1.c -o exemplo_1_1 $(LDFLAGS)
 
 clean:
-	rm -f exemplo_1_2
+	rm -f exemplo_1_1
