@@ -5,14 +5,10 @@ O que é "debugar"?
 - A depuração é o processo de encontrar e corrigir erros ou bugs no código-fonte de qualquer software. Quando o software não funciona como esperado, os programadores de computador estudam o código para determinar a causa dos erros. Eles usam ferramentas de depuração para executar o software em um ambiente controlado, verificar o código passo a passo, analisar e corrigir o problema. [https://aws.amazon.com/what-is/debugging/]
 - "The art of debugging is figuring out what you really told your program to do rather than what you thought you told it to do." [Andrew Singer][https://medium.com/free-code-camp/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2]
 
-- 
 
 Slide 3
 Por que preciso debugar?
 - Bugs e erros ocorrem na programação de computadores porque é uma atividade abstrata e conceitual. Os computadores manipulam dados na forma de sinais eletrônicos. As linguagens de programação abstraem essas informações para que os seres humanos possam interagir com os computadores de forma mais eficiente. Qualquer tipo de software tem várias camadas de abstração, com diferentes componentes que se comunicam para que um aplicativo funcione corretamente. Quando ocorrem erros, encontrar e resolver o problema pode ser um desafio. As ferramentas e estratégias de depuração ajudam a corrigir os problemas mais rapidamente e aumentam a produtividade do desenvolvedor. Como resultado, a qualidade do software e a experiência do usuário final melhoram. [https://aws.amazon.com/what-is/debugging/]
-
-
-
 
 Slide 4
 Tipos de erro que necessitam de debug (na verdade existem mais, e isso depende do contexto, mas essa categorização é suficiente):
@@ -59,15 +55,3 @@ Slide 11-13
 Slide 14
 - Exercícios para fazerem sozinhos, sem dizer que tipo de erro está acontecendo, mas ainda assim acompanhando eles
 
-
-
-
-
-
-FINAL DA APRESENTAÇÃO:
-Problem-solving skills are almost unanimously the most important qualification that employers look for….more than programming languages proficiency, debugging, and system design. Demonstrating computational thinking or the ability to break down large, complex problems is just as valuable (if not more so) than the baseline technical skills required for a job. [https://www.hackerrank.com/research/developer-skills/2018]
-
-
-
-TALVEZ USE:
-"When debugging a program that uses a random-number generator, it is usually a good idea to use a trivial or degenerate generator at first, such as one which always returns 0 or one which returns numbers in order" [Sedwick]
