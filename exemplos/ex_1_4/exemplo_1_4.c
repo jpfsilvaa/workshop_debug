@@ -6,21 +6,17 @@ typedef struct Node {
     struct Node *next;
 } Node;
 
-Node* criar_nodo(int valor) {
-    Node *nodo = malloc(sizeof(Node));
-    if (nodo == NULL) {
-        fprintf(stderr, "Erro ao alocar memória.\n");
-        exit(1);
-    }
-    nodo->data = valor;
-    nodo->next = NULL;
-    return nodo;
+Node* criaLista(int valor) {
+    Node *node = malloc(sizeof(Node));
+    node->data = valor;
+    node->next = NULL;
+    return node;
 }
 
-void adicionar_no_final(Node **head, int valor) {
-    Node *nodo_novo = criar_nodo(valor);
+void adiciona(Node **head, int valor) {
+    Node *node_novo = criaLista(valor);
     if (*head == NULL) {
-        *head = nodo_novo;  // Erro: não aloca corretamente o novo nó
+        *head = node_novo;  // Erro: não aloca corretamente o novo nó
         return;
     }
 
@@ -28,10 +24,10 @@ void adicionar_no_final(Node **head, int valor) {
     while (atual->next != NULL) {
         atual = atual->next;
     }
-    atual->next = nodo_novo;
+    atual->next = node_novo;
 }
 
-void liberar_lista(Node *head) {
+void liberaLista(Node *head) {
     Node *temp;
     while (head != NULL) {
         temp = head;
@@ -40,7 +36,7 @@ void liberar_lista(Node *head) {
     }
 }
 
-void imprimir_lista(Node *head) {
+void imprimeLista(Node *head) {
     while (head != NULL) {
         printf("%d -> ", head->data);
         head = head->next;
@@ -51,16 +47,16 @@ void imprimir_lista(Node *head) {
 int main() {
     Node *lista = NULL;
 
-    adicionar_no_final(&lista, 1);
-    adicionar_no_final(&lista, 2);
-    adicionar_no_final(&lista, 3);
+    adiciona(&lista, 1);
+    adiciona(&lista, 2);
+    adiciona(&lista, 3);
     
-    imprimir_lista(lista);
+    imprimeLista(lista);
 
-    liberar_lista(lista);
+    liberaLista(lista);
     
     // Tentativa de acessar a lista após liberar memória
-    imprimir_lista(lista);  // Causa Segmentation Fault
+    imprimeLista(lista);  // Causa Segmentation Fault
 
     return 0;
 }
