@@ -1,0 +1,101 @@
+100
+PUSH algoritmo
+PUSH codigo
+PRINT
+POP
+POP
+PUSH software
+PUSH hardware
+PUSH navegador
+PUSH servidor
+PUSH internet
+PUSH processador
+PUSH memoria
+PUSH dados
+POP
+POP
+PUSH programa
+PUSH aplicacao
+PUSH redes
+PRINT
+PUSH criptografia
+PUSH nuvem
+PUSH firewall
+PUSH compilador
+POP
+POP
+POP
+PUSH linguagem
+PUSH fonte
+PUSH teclado
+PUSH sistema
+PRINT
+PUSH banco
+PUSH variavel
+PUSH classe
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+PUSH objeto
+PUSH vetor
+PUSH matriz
+PUSH byte
+PUSH bit
+PUSH binario
+PRINT
+PUSH decimal
+PUSH debug
+PUSH script
+PUSH tela
+PUSH input
+PUSH output
+PUSH buffer
+PUSH vetorial
+PUSH pixel
+PUSH scanner
+PRINT
+PUSH placa
+PUSH arquivo
+PUSH cache
+POP
+POP
+POP
+POP
+POP
+POP
+PUSH cpu
+PUSH gpu
+PUSH porta
+PUSH rede
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+PUSH interface
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+PUSH mouse
+POP
+POP
+POP
+POP
+PUSH monitor
+PRINT

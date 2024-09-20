@@ -1,0 +1,105 @@
+104
+PUSH amazonia
+PUSH brasilia
+PUSH rio
+PUSH sao
+PUSH paulo
+PUSH carnaval
+PUSH samba
+PUSH forro
+PUSH sertanejo
+PUSH churrasco
+PUSH praia
+PUSH tropical
+PUSH pantanal
+PUSH petrobras
+PUSH futebol
+PUSH cacique
+PUSH samba
+PUSH caipirinha
+PUSH mate
+PUSH rio
+PUSH floresta
+PUSH litoral
+PUSH cultura
+PUSH populacao
+PUSH indigenas
+PUSH colonizacao
+PUSH historico
+PUSH parintins
+PUSH sudeste
+PUSH nordeste
+PUSH parana
+PRINT
+PUSH gaúcho
+PUSH patria
+PUSH verde
+PUSH ouro
+PUSH copa
+PUSH brasileiro
+PUSH chapada
+PUSH goiania
+PUSH gramado
+PUSH minas
+PUSH sol
+PUSH calor
+PUSH pantanal
+PUSH manaus
+PRINT
+PUSH tapajos
+PUSH indio
+PUSH folclore
+PUSH quilombo
+PUSH bandeira
+PUSH paraiso
+PUSH sertao
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+PRINT
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+POP
+PRINT

@@ -1,0 +1,20 @@
+19
+PUSH tempero
+PUSH cozinha
+PUSH prato
+PRINT
+PUSH frango
+POP
+POP
+PUSH arroz
+PRINT
+PUSH macarrao
+PUSH sopa
+POP
+PUSH salada
+PUSH molho
+POP
+POP
+POP
+PUSH carne
+PRINT

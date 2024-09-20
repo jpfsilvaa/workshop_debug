@@ -1,0 +1,22 @@
+#ifndef FILA_H
+#define FILA_H
+
+typedef struct Fila *p_fila;
+
+struct Fila {
+    p_fila inicio;
+    int valor;
+    p_fila fim;
+};
+
+p_fila cria_fila();
+
+p_fila enfileira(p_fila f, int valor);
+
+p_fila desenfileira(p_fila f);
+
+void imprime_fila(p_fila f);
+
+void destroi_fila(p_fila f);
+
+#endif
