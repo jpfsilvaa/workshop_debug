@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void troca(int *a, int *b) {
-    int *temp = a;  // Erro semântico: salvando o ponteiro, não o valor
+    int *temp = a; 
     a = b;
     b = temp;
 }
@@ -12,7 +12,7 @@ int main() {
     int y = 10;
 
     printf("Antes da troca: x = %d, y = %d\n", x, y);
-    troca(&x, &y);  // Chamando a função para trocar os valores
+    troca(&x, &y);
     printf("Após a troca: x = %d, y = %d\n", x, y);
 
     return 0;
