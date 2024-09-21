@@ -17,8 +17,8 @@ p_fila enfileira(p_fila f, int valor) {
         f->inicio = novo;
     } else {
         f->fim->prox = novo;
+        f->fim = novo;
     }
-    f->fim = novo;
     return f;
 }
 
@@ -42,5 +42,11 @@ void imprime_fila(p_fila f) {
 }
 
 void destroi_fila(p_fila f) {
+    p_no atual = f->inicio;
+    while (atual != NULL) {
+        p_no temp = atual;
+        atual = atual->prox;
+        free(temp);
+    }
     free(f);
 }
