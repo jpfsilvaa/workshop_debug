@@ -1,18 +1,21 @@
 #include <stdio.h>
+#define MAX 5
 
-float calcular_media(int arr[], int tamanho) {
+float calcular_media(int arr[MAX]) {
     int soma = 0;
-    for (int i = 0; i < tamanho; i++) {
+    for (int i = 0; i < MAX; i++) {
         soma += arr[i];
     }
-    return soma / tamanho;
+    return soma / MAX;
 }
 
 int main() {
-    int numeros[] = {5, 10, 15, 20, 22, 43, 12, 99, 1, 43, 12, 62, 11};
-    int tamanho = 5;
+    int numeros[MAX];
 
-    float media = calcular_media(numeros, tamanho);
+    for (int i = 0; i < MAX; i++)
+        scanf("%d", &numeros[i]);
+
+    float media = calcular_media(numeros);
     printf("A média é: %f\n", media);
 
     return 0;
