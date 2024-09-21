@@ -1,0 +1,17 @@
+*.out
+*.o
+*.obj
+*.exe
+
+exemplos/ex1_1/exemplo1_1
+exemplos/ex1_2/exemplo1_2
+exemplos/ex1_3/exemplo1_3
+exemplos/ex1_4/exemplo1_4
+exemplos/ex1_5/exemplo1_5
+
+exemplos/ex2_1/exemplo2_1
+exemplos/ex2_2/exemplo2_2
+exemplos/ex2_3/exemplo2_3
+
+exercicios/exercicio1/padaria
+exercicios/exercicio2/empilha_palavras
