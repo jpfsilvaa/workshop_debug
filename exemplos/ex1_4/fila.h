@@ -2,12 +2,20 @@
 #define FILA_H
 
 typedef struct Fila *p_fila;
+typedef struct No *p_no;
+
+struct No {
+    int valor;
+    p_no prox;
+};
 
 struct Fila {
-    p_fila inicio;
+    p_no inicio;
     int valor;
-    p_fila fim;
+    p_no fim;
 };
+
+
 
 p_fila cria_fila();
 
