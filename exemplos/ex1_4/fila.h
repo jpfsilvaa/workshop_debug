@@ -16,12 +16,11 @@ struct Fila {
 };
 
 
-
 p_fila cria_fila();
 
-p_fila enfileira(p_fila f, int valor);
+void enfileira(p_fila f, int valor);
 
-p_fila desenfileira(p_fila f);
+int desenfileira(p_fila f);
 
 void imprime_fila(p_fila f);
 

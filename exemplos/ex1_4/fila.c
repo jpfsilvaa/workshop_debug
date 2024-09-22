@@ -9,7 +9,7 @@ p_fila cria_fila(int val) {
     return f;
 }
 
-p_fila enfileira(p_fila f, int valor) {
+void enfileira(p_fila f, int valor) {
     p_no novo = malloc(sizeof(struct No));
     novo->valor = valor;
     novo->prox = NULL;
@@ -19,17 +19,16 @@ p_fila enfileira(p_fila f, int valor) {
         f->fim->prox = novo;
         f->fim = novo;
     }
-    return f;
 }
 
-p_fila desenfileira(p_fila f) {
+int desenfileira(p_fila f) {
     if (f->inicio == NULL) {
-        return f;
+        return -1;
     }
     p_no temp = f->inicio;
-    f->inicio = f->inicio->prox;
+    int valor = temp->valor;
     free(temp);
-    return f;
+    return valor;
 }
 
 void imprime_fila(p_fila f) {
