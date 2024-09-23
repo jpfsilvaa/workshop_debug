@@ -30,7 +30,6 @@ p_no remove_no(p_no lista, int valor) {
     } else {
         anterior->prox = atual->prox;
     }
-    // free(atual); TIRAR O FREE PARA VAZER MEMORIA
     return lista;
 }
 

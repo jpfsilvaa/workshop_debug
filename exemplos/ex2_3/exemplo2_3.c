@@ -16,7 +16,5 @@ int main() {
     lista = remove_no(lista, 40);
     lista = insere_no(lista, 60);
     imprime_lista(lista);
-
-    // libera_lista(lista); NAO LIBERAR A MEMORIA PARA VAZAR MEMORIA
     return 0;
 }
