@@ -21,8 +21,6 @@ int main() {
             pushPilha(palavra, p);
         }
     }
-    free(palavra);
-    free(comando);
     freePilha(p);
     return 0;
 }

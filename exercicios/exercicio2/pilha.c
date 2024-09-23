@@ -15,6 +15,7 @@ void pushPilha(char* palavra, p_pilha p) {
     strcpy(novo->palavra, palavra);
     novo->prox = p->topo;
     p->topo = novo;
+    p->tamanho++;
 }
 
 void popPilha(p_pilha p) {
@@ -24,7 +25,6 @@ void popPilha(p_pilha p) {
     p_no aux = p->topo;
     p->topo = p->topo->prox;
     free(aux->palavra);
-    free(aux);
 }
 
 void freePilha(p_pilha p) {
@@ -32,18 +32,19 @@ void freePilha(p_pilha p) {
     while (aux != NULL) {
         p_no temp = aux;
         aux = aux->prox;
-        free(temp->palavra);
-        free(temp);
+        free(temp->palavra);        
     }
     free(p);
 }
 
 void printPilha(p_pilha p) {
     p_no aux = p->topo;
+    int i = 0;
     printf("PILHA ATUAL:\n");
-    while (aux != NULL) {
+    while (i <= p->tamanho) {
         printf("%s\n", aux->palavra);
         aux = aux->prox;
+        i++;
     }
     printf("\n");
 }

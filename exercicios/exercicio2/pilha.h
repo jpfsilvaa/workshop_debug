@@ -10,6 +10,7 @@ struct No {
 
 struct Pilha { 
     p_no topo;
+    int tamanho;
 };
  
 p_pilha inicializaPilha();
