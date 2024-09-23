@@ -3,10 +3,13 @@ LDFLAGS = -lm
 
 .PHONY: all clean
 
-all: padaria
+all: empilha_palavras
 
-exemplo_1_4: padaria.c
-	gcc $(CFLAGS) padaria.c -o padaria $(LDFLAGS)
+pilha.o: pilha.c pilha.h
+	gcc $(CFLAGS) -c pilha.c -o pilha.o
+
+empilha_palavras: empilha_palavras.c pilha.o
+	gcc $(CFLAGS) empilha_palavras.c pilha.o -o empilha_palavras $(LDFLAGS)
 
 clean:
-	rm -f padaria
+	rm -f empilha_palavras pilha.o
