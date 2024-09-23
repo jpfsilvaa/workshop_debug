@@ -6,21 +6,23 @@
 int main() {
     p_pilha p = inicializaPilha();
     int qtdComandos = 0;
-    char comando[MAX];
+    char* comando = malloc(MAX * sizeof(char));
+    char* palavra = malloc(MAX * sizeof(char));
 
     scanf("%d", &qtdComandos);
     while (qtdComandos--) {
         scanf("%s", comando);
         if (strcmp(comando, "POP") == 0) {
-            p = popPilha(p);
+            popPilha(p);
         } else if (strcmp(comando, "PRINT") == 0) {
             printPilha(p);
         } else if (strcmp(comando, "PUSH") == 0) {
-            char palavra[MAX];
             scanf("%s", palavra);
-            p = pushPilha(palavra, p);
+            pushPilha(palavra, p);
         }
     }
+    free(palavra);
+    free(comando);
     freePilha(p);
     return 0;
 }

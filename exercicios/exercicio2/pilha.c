@@ -5,34 +5,41 @@
 
 p_pilha inicializaPilha() {
     p_pilha p = malloc(sizeof(struct Pilha));
-    p->tam = 0;
-    p->prox = NULL;
+    p->topo = NULL;
     return p;
 }
 
-p_pilha pushPilha(char palavra[MAX], p_pilha p) {
-    p_pilha novo = malloc(sizeof(struct Pilha));
+void pushPilha(char* palavra, p_pilha p) {
+    p_no novo = malloc(sizeof(struct No));
+    novo->palavra = malloc(MAX * sizeof(char));
     strcpy(novo->palavra, palavra);
-    novo->tam = p->tam + 1;
-    novo->prox = p;
-    return novo;
+    novo->prox = p->topo;
+    p->topo = novo;
 }
 
-p_pilha popPilha(p_pilha p) {
-    p_pilha aux = p;
-    p = aux->prox;
+void popPilha(p_pilha p) {
+    if (p->topo == NULL) {
+        return;
+    }
+    p_no aux = p->topo;
+    p->topo = p->topo->prox;
+    free(aux->palavra);
     free(aux);
-    return p;
 }
 
 void freePilha(p_pilha p) {
-    while (p != NULL) {
-        p = popPilha(p);
+    p_no aux = p->topo;
+    while (aux != NULL) {
+        p_no temp = aux;
+        aux = aux->prox;
+        free(temp->palavra);
+        free(temp);
     }
+    free(p);
 }
 
 void printPilha(p_pilha p) {
-    p_pilha aux = p;
+    p_no aux = p->topo;
     printf("PILHA ATUAL:\n");
     while (aux != NULL) {
         printf("%s\n", aux->palavra);
